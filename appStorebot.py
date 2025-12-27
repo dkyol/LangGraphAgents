@@ -127,7 +127,7 @@ def main():
         print(f"\nGenerated response:\n{generated}")
         
         if DRY_RUN:
-            print("🚫 DRY RUN: Not posting (set DRY_RUN = False to post live)")
+            print("DRY RUN: Not posting (set DRY_RUN = False to post live)")
         else:
             if input("Post this response? (y/N): ").strip().lower() == 'y':
                 post_response(review['id'], generated)
